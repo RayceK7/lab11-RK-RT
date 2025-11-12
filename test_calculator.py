@@ -7,12 +7,15 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+        self.assertEqual(add(1, 2), 3)
+        self.assertEqual(add(0, 0), 0)
+        self.assertEqual(add(0, -8), -8)
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
-    # ##########################
+    def test_subtract(self): # 3 assertions
+        self.assertEqual(subtract(5, 4), 1)
+        self.assertEqual(subtract(7, 9), -2)
+        self.assertEqual(subtract(0, 0), 0)
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
@@ -28,19 +31,20 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
+    def test_divide_by_zero(self): # 1 assertion
     #     # call division function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+    #     #div(0, 5)
+        self.assertRaises(ZeroDivisionError, divide, 5, 0)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertEqual(log(2, 4), 2)
+        self.assertEqual(log(-2, -8), 3)
+        self.assertEqual(log(5, 5), 1)
 
-    # def test_log_invalid_base(self): # 1 assertion
+    def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
+        self.assertRaises(ZeroDivisionError, log, 5, 0)
     
 
     def test_log_invalid_argument(self): # 1 assertion
