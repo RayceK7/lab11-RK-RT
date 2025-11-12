@@ -22,12 +22,12 @@ def multiply(a,b):
     return a * b
 def divide(a,b):
     if a == 0:
-        raise ZeroDivisionError ("You cannot divide by 0")
+        raise ZeroDivisionError
     else:
         return a / b
 def log(a,b):
-    if(b >= 1):
-        raise ValueError ("Base must be larger than 1")
+    if b >= 1:
+        raise ValueError
     else:
         return log(a,b)
 def exp(a,b):
