@@ -1,3 +1,7 @@
+# https://github.com/RayceK7/lab11-RK-RT
+#Partner 1: Rayce Kronenberg
+#Partner 2: Ragul Thiyagarajan
+
 import unittest
 from calculator import *
 
@@ -39,7 +43,7 @@ class TestCalculator(unittest.TestCase):
     # ##########################
     
 
-     def test_log_invalid_argument(self): # 1 assertion
+    def test_log_invalid_argument(self): # 1 assertion
          self.assertRaises(log(-1,5),ValueError)
 
     def test_hypotenuse(self): # 3 assertions
