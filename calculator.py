@@ -4,7 +4,7 @@
 # First example
 import math
 
-def sqrt(a):
+def square_root(a):
     if a < 0:
         raise ValueError
     else:
@@ -15,14 +15,14 @@ def add(a, b):
     return a + b
 def subtract(a,b):
     return a-b
-def multiply(a,b):
+def mul(a,b):
     return a * b
-def divide(a,b):
+def div(a,b):
     if b == 0:
         raise ZeroDivisionError
     else:
         return a / b
-def log(a,b):
+def logarithm(a,b):
     if b >= 1:
         raise ValueError
     else:
