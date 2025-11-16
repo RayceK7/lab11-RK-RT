@@ -23,11 +23,13 @@ def div(a,b):
     else:
         return a / b
 def logarithm(a,b):
-    if b == 0:
+    if a == 0:
         raise ZeroDivisionError
     if a <= 0:
         raise ValueError
-    return math.log(a,b)
+    if b <= 0:
+        raise ValueError
+    return math.log(b, a)
 def exp(a,b):
     return a ** b
 
