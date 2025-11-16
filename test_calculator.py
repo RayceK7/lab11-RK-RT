@@ -56,7 +56,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(hypotenuse(6,8),10)
 
     def test_sqrt(self): # 3 assertions
-        self.assertRaises(square_root(0), ValueError)
+        self.assertRaises(ValueError, square_root, 0)
         self.assertEqual(square_root(25),5)
         self.assertEqual(square_root(100),10)
     ##########################
