@@ -18,7 +18,7 @@ def subtract(a,b):
 def multiply(a,b):
     return a * b
 def divide(a,b):
-    if a == 0:
+    if b == 0:
         raise ZeroDivisionError
     else:
         return a / b
@@ -26,7 +26,7 @@ def log(a,b):
     if b >= 1:
         raise ValueError
     else:
-        return log(a,b)
+        return math.log(a,b)
 def exp(a,b):
     return a ** b
 
