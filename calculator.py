@@ -29,7 +29,7 @@ def logarithm(a,b):
         raise ValueError
     if b <= 0:
         raise ValueError
-    return int(math.log(b, a))
+    return math.log(b, a)
 def exp(a,b):
     return a ** b
 
