@@ -25,7 +25,7 @@ def div(a,b):
 def logarithm(a,b):
     if a == 0:
         raise ZeroDivisionError
-    if a <= 0:
+    if a < 0:
         raise ValueError
     if b <= 0:
         raise ValueError
